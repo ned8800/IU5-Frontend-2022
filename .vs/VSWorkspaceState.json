@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github",
+    "\\.github\\workflows",
     "\\lab3",
     "\\lab4",
     "\\tests"
   ],
-  "SelectedNode": "\\tests\\lab3.test.js",
+  "SelectedNode": "\\.github\\workflows\\nodejs.yaml",
   "PreviewInSolutionExplorer": false
 }
