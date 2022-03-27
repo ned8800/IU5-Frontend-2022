@@ -17,7 +17,17 @@
 */
 
 function get1DArray(arr) {
-    //code here
+    let zipArr = [];
+    (function flat(arr) {
+        arr.forEach(function (el) {
+            if (Array.isArray(el)) {
+                flat(el);
+            } else {
+                zipArr.push(el);
+            }
+        });
+    })(arr);
+    return zipArr;
 }
 
 module.exports = get1DArray;
