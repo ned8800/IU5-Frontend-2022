@@ -21,8 +21,35 @@
 ]
  */
 
+
 function makeRoute(arr) {
-    //code here
+    let curr = 0;
+
+    for (let i = 0; i < arr.length; ++i) {
+        let check = 0;
+        for (let j = 0; j < arr.length; ++j) {
+            if (arr[i].from == arr[j].to) {
+                check = 1;
+                break;
+            }
+        }
+        if (check == 0) {
+            curr = i;
+            break;
+        }
+    }
+
+    [arr[0], arr[curr]] = [arr[curr], arr[0]];
+
+    for (let i = 0; i < arr.length - 1; ++i) {
+        for (let j = i + 1; j < arr.length; ++j) {
+            if (arr[i].to == arr[j].from) {
+                [arr[i + 1], arr[j]] = [arr[j], arr[i + 1]];
+            }
+        }
+    }
+
+    return arr;
 }
 
 module.exports = makeRoute;

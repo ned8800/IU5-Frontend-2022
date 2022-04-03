@@ -14,6 +14,10 @@
  */
 function curry(f) {
     //code here
+    nextCurry = function (...temp) {
+        return (temp.length >= f.length) ? f(...temp) : (...nextTemp) => nextCurry(...temp.concat(nextTemp));
+    }
+    return nextCurry;
 }
 
 module.exports = curry;
