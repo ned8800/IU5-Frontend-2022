@@ -151,7 +151,7 @@ button:hover {
     font-size: 48px;
     font-weight: 700;
     text-transform: capitalize;
-    margin: 0 10%;
+    margin: 0 20%;
 }
 
 .header_subtitle {
@@ -421,7 +421,6 @@ header_button_inherit {
 }
 
 .footer__item {
-    margin: 50px;
     display: flex;
     flex-direction: column;
     width: 20%;
