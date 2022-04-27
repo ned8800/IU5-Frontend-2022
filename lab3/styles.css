@@ -125,6 +125,21 @@ button:hover {
     cursor: pointer;
 }
 
+.navbar_memmber_main {
+    min-width: 250px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-blue);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar_memmber_main button {
+    background-color: inherit;
+}
+
 .navbar_memmber button {
     background-color: inherit;
     margin-right: 20px;
@@ -138,7 +153,7 @@ button:hover {
 }
 
 .header_vec3 {
-    position: absolute;
+    position: relative;
     top: 5%;
 }
 
@@ -148,10 +163,12 @@ button:hover {
 }
 
 .header_tittle {
-    font-size: 48px;
+    padding: 40px;
+    font-size: 50px;
+    text-align: center;
     font-weight: 700;
     text-transform: capitalize;
-    margin: 0 20%;
+    margin: 0 10%;
 }
 
 .header_subtitle {
@@ -421,6 +438,7 @@ header_button_inherit {
 }
 
 .footer__item {
+    margin: 50px;
     display: flex;
     flex-direction: column;
     width: 20%;
