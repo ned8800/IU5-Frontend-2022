@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab7</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="../Pictures/Star.png">
+    <script src="./scripts.js"></script>
+</head>
+
+<body>
+    <div class="header-bar">
+        <div class="bar">
+            <img id="logo" src="screens/My_logo.png" width="200px">
+            <form onsubmit=" return false;">
+                <input type="text" placeholder="Город" id="input-form">
+                <button type="submit" onclick="getCity()">Поиск</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div class="weather-today">
+            <div id="weather-screen">
+                <p id="city"></p>
+                <div id="div-temp">
+                    <p id="temp"></p>
+                    <img id="main-icon" src="" height="60%">
+                </div>
+                <p id="description"></p>
+                <p id="feels-like"></p>
+                <p id="maxmin"></p>
+            </div>
+
+            <div class="today-times" id="today-times">
+                <div class="params">
+                    <img id="press-icon" src="icons/press.svg" height="20px">
+                    <p id="press-value"></p>
+                    <img id="humidity-icon" src="icons/humidity.png" height="20px">
+                    <p id="humidity-value"></p>
+                    <img id="wind-icon" src="icons/wind.png" height="20px">
+                    <p id="wind-value"></p>
+                </div>
+                <div class="params">
+                    <p id="cloud"></p>
+                    <p id="visibility"></p>
+                    <p id="rain-pred"></p>
+                </div>
+
+                <hr class="my_line">
+                <p id="predict-text">Прогноз на ближайшие 5 дней</p>
+
+                <div class="temp-today" id="temp-today-id">
+                </div>
+            </div>
+        </div>
+
+        <hr class="my_line">
+        <div id="div-text-endr">
+            <p id="text-endr">Прекрасный сайт лабораторной работы 7 ❤</p>
+            <p id="text-endr">Погода.Ру</p>
+        </div>
+    </div>
+</body>
+
+</html>
